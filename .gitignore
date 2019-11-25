@@ -1,0 +1,12 @@
+
+*.log
+
+build/
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# build output
+dist/
+public/
