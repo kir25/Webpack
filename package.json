@@ -1,4 +1,5 @@
 {
+    "homepage": "https://kir25.github.io/Webpack",
     "name": "webpack",
     "version": "1.0.0",
     "description": "",
@@ -7,7 +8,9 @@
         "build": "webpack -p --config ./webpack.config.prod.js ",
         "serve": "serve ./dist",
         "lint": "eslint ./src/App.js",
-        "lint:fix": "eslint ./src/App.js --fix"
+        "lint:fix": "eslint ./src/App.js --fix",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "keywords": [],
     "author": "",
@@ -41,6 +44,7 @@
         "eslint-plugin-prettier": "^3.1.1",
         "eslint-plugin-react": "^7.16.0",
         "eslint-plugin-react-hooks": "^1.7.0",
+        "gh-pages": "^2.1.1",
         "html-webpack-plugin": "^3.2.0",
         "prettier": "^1.19.1",
         "serve": "^11.2.0",
